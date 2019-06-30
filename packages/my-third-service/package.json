@@ -1,0 +1,12 @@
+{
+    "name": "my-third-service",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "deploy": "serverless deploy",
+      "offline": "serverless offline",
+      "removeService": "serverless remove"
+    }
+}
+  

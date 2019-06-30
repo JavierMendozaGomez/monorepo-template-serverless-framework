@@ -1,0 +1,32 @@
+{
+  "name": "monorepo-template-serverless-framework",
+  "version": "1.0.0",
+  "description": "template monorepo serverless framework",
+  "main": "index.js",
+  "repository": "https://github.com/JavierMendozaGomez/monorepo-template-serverless-framework.git",
+  "author": "javierenriquemendozagomez@gmail.com <javierenriquemendozagomez@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "deployAllServices": "wsrun deploy",
+    "removeAllServices": "wsrun removeService"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/*-service",
+      "**/*-service/**",
+      "**"
+    ]
+  },
+  "devDependencies": {
+    "@types/aws-sdk":"^2.7.0",
+    "aws-sdk": "^2.485.0",
+    "lodash": "^4.17.11",
+    "serverless": "^1.46.1",
+    "serverless-offline": "^5.5.0",
+    "wsrun": "^4.0.2"
+  }
+}
