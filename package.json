@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/aws-sdk":"^2.7.0",
-    "aws-sdk": "^2.493.0",
+    "aws-sdk": "^2.814.0",
     "lodash": "^4.17.14",
     "serverless": "^1.47.0",
     "serverless-offline": "^5.7.3",
